@@ -27,5 +27,4 @@ int _strlen(char *s)
 
 
 
-	r
 		
