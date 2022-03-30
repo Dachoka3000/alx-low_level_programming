@@ -10,8 +10,10 @@ int _root_square(int a, int b)
 	if (b * b == a)
 		return (b);
 
-	if (b * b >a)
-		return (-1)
+	if (b * b > a)
+		return (-1);
+
+	return (_root_square(a, b + 1));
 }
 /**
  * _sqrt_recursion - function that returns the natural square root of a number.
