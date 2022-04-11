@@ -1,14 +1,13 @@
 #include <stdlib.h>
 #include "dog.h"
-
+#include <stdio.h>
 /**
- *new_dog - creates a new dog
- *@name: 1st member
- *@age: 2nd member
- *@owner: 3rd member
+ * new_dog - creates a new dog
+ * @name: 1st member
+ * @age: 2nd member
+ * @owner: 3rd member
  * Return: NULL if fail
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i, lenN, lenO;
@@ -20,7 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		lenN++;
 	lenO = 0;
 	while (owner[lenO] != '\0')
-		len0++;
+		lenO++;
 
 	n_dog = malloc(sizeof(struct dog));
 	if (n_dog == NULL)
@@ -47,7 +46,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		n_dog->name[i] = name[i];
 	for (i = 0; i <= lenO; i++)
 		n_dog->owner[i] = owner[i];
-	n_dog->age = age;
-	return (n_dog);
+		n_dog->age = age;
+		return (n_dog);
 }
-
