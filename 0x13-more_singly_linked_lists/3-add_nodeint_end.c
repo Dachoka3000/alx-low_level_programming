@@ -2,7 +2,7 @@
 /**
  * add_nodeint_end - adds a new mode at the end of a istint_t list
  * @head: pointer to pointer of first element of list
- * @h: element to be added in the list
+ * @n: element to be added in the list
  *
  * Return: address of the new element or NULL if it fails
  */
